@@ -1,10 +1,14 @@
-import React from "react";
+import Header from '@/components/Header';
+import TodosLogic from './TodosLogic';
+
 const TodoApp = () => {
-    return (
-      <React.Fragment>
-        <h1>Hello world!</h1>
-        <p>I am in a React Component!</p>
-        </React.Fragment>
-    );
-  };
-  export default TodoApp;
+  return (
+    <div className="wrapper">
+      <div className="todos">
+        <Header />
+        <TodosLogic />
+      </div>
+    </div>
+  );
+};
+export default TodoApp;
